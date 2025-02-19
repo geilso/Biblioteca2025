@@ -6,6 +6,8 @@ namespace BibliotecaWeb.Controllers
 {
     public class HomeController : Controller
     {
+        public const string SessionKeyUserName = "UserName";
+
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
@@ -15,6 +17,16 @@ namespace BibliotecaWeb.Controllers
 
         public IActionResult Index()
         {
+            if (string.IsNullOrEmpty(HttpContext.Session.GetString(SessionKeyUserName)))
+            {
+                HttpContext.Session.SetString(SessionKeyUserName, "Sergiper");
+            }
+            var userName = HttpContext.Session.GetString(SessionKeyUserName);
+
+            ViewData["nomeUsuario"] = userName;
+
+            ViewBag.PerfilUsuario = "Estado";
+
             return View();
         }
 

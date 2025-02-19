@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3FfgGjUeUjQ=",
+  "dgSpecHash": "6/Weyt7cJRw=",
   "success": true,
   "projectFilePath": "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\Core\\Core.csproj",
   "expectedPackageFiles": [
@@ -69,26 +69,5 @@
     "C:\\Users\\Geilson\\.nuget\\packages\\system.windows.extensions\\8.0.0\\system.windows.extensions.8.0.0.nupkg.sha512",
     "C:\\Users\\Geilson\\.nuget\\packages\\zstdsharp.port\\0.8.0\\zstdsharp.port.0.8.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "O pacote 'Microsoft.Extensions.Caching.Memory' 8.0.0 tem uma alta vulnerabilidade de gravidade conhecida, https://github.com/advisories/GHSA-qj66-m88j-hmgj",
-      "libraryId": "Microsoft.Extensions.Caching.Memory",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "O pacote 'System.Text.Json' 8.0.4 tem uma alta vulnerabilidade de gravidade conhecida, https://github.com/advisories/GHSA-8g4q-xg66-9fp4",
-      "libraryId": "System.Text.Json",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  "logs": []
 }

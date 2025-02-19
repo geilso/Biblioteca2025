@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35521.163 d17.12
+VisualStudioVersion = 17.12.35521.163
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BibliotecaWeb", "BibliotecaWeb\BibliotecaWeb.csproj", "{A9DEE8A3-4BA3-4D04-B82F-14C0AEEFEDB6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{B8761EBA-B502-4270-A4C1-75D5E6AF67FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{00F47FD0-026A-4268-BEB5-661ECF69A011}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{B8761EBA-B502-4270-A4C1-75D5E6AF67FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8761EBA-B502-4270-A4C1-75D5E6AF67FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8761EBA-B502-4270-A4C1-75D5E6AF67FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00F47FD0-026A-4268-BEB5-661ECF69A011}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00F47FD0-026A-4268-BEB5-661ECF69A011}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00F47FD0-026A-4268-BEB5-661ECF69A011}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00F47FD0-026A-4268-BEB5-661ECF69A011}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

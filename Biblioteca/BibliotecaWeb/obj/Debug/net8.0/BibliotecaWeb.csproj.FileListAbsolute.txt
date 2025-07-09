@@ -275,3 +275,4 @@ C:\Users\Geilson\Desktop\Biblioteca2025\Biblioteca\BibliotecaWeb\bin\Debug\net8.
 C:\Users\Geilson\Desktop\Biblioteca2025\Biblioteca\BibliotecaWeb\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
 C:\Users\Geilson\Desktop\Biblioteca2025\Biblioteca\BibliotecaWeb\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
 C:\Users\Geilson\Desktop\Biblioteca2025\Biblioteca\BibliotecaWeb\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\Geilson\Desktop\Biblioteca2025\Biblioteca\BibliotecaWeb\obj\Debug\net8.0\rpswa.dswa.cache.json

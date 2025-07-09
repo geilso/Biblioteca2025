@@ -1,3 +1,5 @@
+// Licenciado para a .NET Foundation sob um ou mais contratos.
+// A .NET Foundation licencia este arquivo para você sob a licença MIT.
 namespace BibliotecaWeb
 {
     public class Program

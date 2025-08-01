@@ -19,14 +19,14 @@ namespace Service
             this.context = context;
         }
 
-        public uint Create(Autor autor)
+        public int Create(Autor autor)
         {
             if (autor.DataNascimento.Year < 1000)
                 throw new ServiceException("O ano de nascimento de autor deve ser maior do que 1000. Favor informar nova data.");
 
             context.Add(autor);
             context.SaveChanges();
-            return autor.Id;
+            return (int)autor.Id;
         }
 
         public void Delete(uint id)
@@ -48,7 +48,7 @@ namespace Service
             context.SaveChanges();
         }
 
-        public Autor? Get(uint id)
+        public Autor Get(uint id)
         {
             return context.Autors.Find(id);
         }
@@ -56,7 +56,6 @@ namespace Service
         public IEnumerable<Autor> GetAll()
         {
             return context.Autors.AsNoTracking();
-
         }
 
         public IEnumerable<Autor> GetByNome(string nomeAutor)
@@ -67,9 +66,23 @@ namespace Service
             return query.AsNoTracking().ToList();
         }
 
-        int IAutorService.Create(Autor autor)
+        public DatatableResponse GetDataPage(DatatableRequest request)
         {
-            throw new NotImplementedException();
+            var autores = context.Autors.AsNoTracking();
+            if (!string.IsNullOrEmpty(request.Search))
+            {
+                autores = autores.Where(a => a.Nome.Contains(request.Search));
+            }
+            var totalRecords = autores.Count();
+            var pagedAutores = autores
+                .Skip((request.Page - 1) * request.PageSize)
+                .Take(request.PageSize)
+                .ToList();
+            return new DatatableResponse
+            {
+                Data = pagedAutores,
+                TotalRecords = totalRecords
+            };
         }
     }
 }

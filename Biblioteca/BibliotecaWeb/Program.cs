@@ -1,8 +1,13 @@
+<<<<<<< HEAD
+// Licenciado para a .NET Foundation sob um ou mais contratos.
+// A .NET Foundation licencia este arquivo para você sob a licença MIT.
+=======
 using Core.Service;
 using Core;
 using Microsoft.EntityFrameworkCore;
 using Service;
 
+>>>>>>> main
 namespace BibliotecaWeb
 {
     public class Program

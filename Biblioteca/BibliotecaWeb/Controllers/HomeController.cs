@@ -1,11 +1,18 @@
-using System.Diagnostics;
+// Licenciado para a .NET Foundation sob um ou mais contratos.
+// A .NET Foundation licencia este arquivo para você sob a licença MIT.
 using BibliotecaWeb.Models;
+using Core.Service;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics;
 
 namespace BibliotecaWeb.Controllers
 {
+    //[Authorize]
     public class HomeController : Controller
     {
+        public const string SessionKeyUserName = "UserName";
+
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
@@ -15,6 +22,16 @@ namespace BibliotecaWeb.Controllers
 
         public IActionResult Index()
         {
+            if (string.IsNullOrEmpty(HttpContext.Session.GetString(SessionKeyUserName)))
+            {
+                HttpContext.Session.SetString(SessionKeyUserName, "ufs");
+            }
+            var userName = HttpContext.Session.GetString(SessionKeyUserName);
+
+            ViewData["nomeUsuario"] = userName;
+
+            ViewBag.PerfilUsuario = "univercidade";
+
             return View();
         }
 

@@ -1,11 +1,5 @@
 ﻿using Core;
 using Core.Service;
-using Core.Dto;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.Graph;
 using Microsoft.EntityFrameworkCore;
 
 namespace Service
@@ -48,7 +42,7 @@ namespace Service
             context.SaveChanges();
         }
 
-        public Autor Get(uint id)
+        public Autor? Get(uint id)
         {
             return context.Autors.Find(id);
         }
@@ -64,25 +58,6 @@ namespace Service
                         where autor.Nome.Contains(nomeAutor)
                         select autor;
             return query.AsNoTracking().ToList();
-        }
-
-        public DatatableResponse GetDataPage(DatatableRequest request)
-        {
-            var autores = context.Autors.AsNoTracking();
-            if (!string.IsNullOrEmpty(request.Search))
-            {
-                autores = autores.Where(a => a.Nome.Contains(request.Search));
-            }
-            var totalRecords = autores.Count();
-            var pagedAutores = autores
-                .Skip((request.Page - 1) * request.PageSize)
-                .Take(request.PageSize)
-                .ToList();
-            return new DatatableResponse
-            {
-                Data = pagedAutores,
-                TotalRecords = totalRecords
-            };
         }
     }
 }

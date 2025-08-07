@@ -1,6 +1,9 @@
 ﻿using Core;
+using Core.Dto;
 using Core.Service;
 using Microsoft.EntityFrameworkCore;
+
+
 
 namespace Service
 {
@@ -42,12 +45,17 @@ namespace Service
             context.SaveChanges();
         }
 
-        public Autor? Get(uint id)
+        public Autor Get(uint id)
         {
             return context.Autors.Find(id);
         }
 
-        public IEnumerable<Autor> GetAll()
+        /// <summary>
+        /// Buscar todos os autores cadastrados
+        /// </summary>
+        /// <returns></returns>
+        /// <exception cref="NotImplementedException"></exception>
+        IEnumerable<Autor> IAutorService.GetAll()
         {
             return context.Autors.AsNoTracking();
         }
@@ -58,6 +66,24 @@ namespace Service
                         where autor.Nome.Contains(nomeAutor)
                         select autor;
             return query.AsNoTracking().ToList();
+        }
+
+        /// <summary>
+        /// Busca nomes dos atuores iniciando pelo nome passado
+        /// </summary>
+        /// <param name="nome"></param>
+        /// <returns></returns>
+        /// <exception cref="NotImplementedException"></exception>
+        IEnumerable<AutorDto> IAutorService.GetByName(string nome)
+        {
+            var query = from Autor autor in context.Autors
+                        orderby autor.Nome descending
+                        select new AutorDto()
+                        {
+                            Id = autor.Id,
+                            Nome = autor.Nome
+                        };
+            return query.AsNoTracking();
         }
     }
 }

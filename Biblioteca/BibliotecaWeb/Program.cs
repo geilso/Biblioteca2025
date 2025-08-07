@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 // Licenciado para a .NET Foundation sob um ou mais contratos.
 // A .NET Foundation licencia este arquivo para você sob a licença MIT.
+=======
+using Core.Service;
+using Core;
+using Microsoft.EntityFrameworkCore;
+using Service;
+
+>>>>>>> main
 namespace BibliotecaWeb
 {
     public class Program
@@ -10,6 +18,13 @@ namespace BibliotecaWeb
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            builder.Services.AddTransient<IAutorService, AutorService>();
+
+            builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
+            builder.Services.AddDbContext<BibliotecaContext>(
+                options => options.UseMySQL(builder.Configuration.GetConnectionString("BibliotecaConnection")));
 
             var app = builder.Build();
 

@@ -1,0 +1,15 @@
+<<<<<<< HEAD
+/Biblioteca/.vs
+/Biblioteca/BibliotecaWeb/bin
+/Biblioteca/BibliotecaWeb/obj
+/Biblioteca/Core/bin
+/Biblioteca/Core/obj
+=======
+/Biblioteca/BibliotecaWeb/obj
+/Biblioteca/BibliotecaWeb/bin
+/Biblioteca/Core/obj
+/Biblioteca/Core/bin
+/Biblioteca/Service/obj
+/Biblioteca/Service/bin
+/Biblioteca/.vs
+>>>>>>> main

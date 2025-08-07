@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Core;
 using Core.Service;
 using Microsoft.AspNetCore.Mvc;
 using Models;
@@ -25,9 +26,11 @@ namespace BibliotecaWeb.Controllers
         }
 
         // GET: AutorController/Details/5
-        public ActionResult Details(int id)
+        public ActionResult Details(uint id)
         {
-            return View();
+            var autor = autorService.Get(id);
+            var autorViewModel = mapper.Map<AutorViewModel>(autor);
+            return View(autorViewModel);
         }
 
         // GET: AutorController/Create
@@ -39,10 +42,15 @@ namespace BibliotecaWeb.Controllers
         // POST: AutorController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(AutorViewModel autorViewModel)
         {
             try
             {
+                if (ModelState.IsValid)
+                {
+                    var autor = mapper.Map<Autor>(autorViewModel);
+                    autorService.Create(autor);
+                }
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -52,18 +60,25 @@ namespace BibliotecaWeb.Controllers
         }
 
         // GET: AutorController/Edit/5
-        public ActionResult Edit(int id)
+        public ActionResult Edit(uint id)
         {
-            return View();
+            var autor = autorService.Get((uint)id);
+            var autorViewModel = mapper.Map<AutorViewModel>(autor);
+            return View(autorViewModel);
         }
 
         // POST: AutorController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(AutorViewModel autorViewModel)
         {
             try
             {
+                if (ModelState.IsValid)
+                {
+                    var autor = mapper.Map<Autor>(autorViewModel);
+                    autorService.Edit(autor);
+                }
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -73,18 +88,21 @@ namespace BibliotecaWeb.Controllers
         }
 
         // GET: AutorController/Delete/5
-        public ActionResult Delete(int id)
+        public ActionResult Delete(uint id)
         {
-            return View();
+            var autor = autorService.Get((uint)id);
+            var autorViewModel = mapper.Map<AutorViewModel>(autor);
+            return View(autorViewModel);
         }
 
         // POST: AutorController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public ActionResult Delete(uint id, AutorViewModel autorViewModel)
         {
             try
             {
+                autorService.Delete(id);
                 return RedirectToAction(nameof(Index));
             }
             catch

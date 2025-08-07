@@ -22,16 +22,6 @@ namespace BibliotecaWeb.Controllers
 
         public IActionResult Index()
         {
-            if (string.IsNullOrEmpty(HttpContext.Session.GetString(SessionKeyUserName)))
-            {
-                HttpContext.Session.SetString(SessionKeyUserName, "ufs");
-            }
-            var userName = HttpContext.Session.GetString(SessionKeyUserName);
-
-            ViewData["nomeUsuario"] = userName;
-
-            ViewBag.PerfilUsuario = "univercidade";
-
             return View();
         }
 

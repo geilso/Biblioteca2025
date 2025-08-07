@@ -6,6 +6,6 @@ namespace Core.Service
     {
         IEnumerable<Autor> GetAll();
 
-        IEnumerable<AutorDto> GetByName(string nome);
+        IEnumerable<Autor> GetByNome(string nome);
     }
 }

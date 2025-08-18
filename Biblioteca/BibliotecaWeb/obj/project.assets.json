@@ -2983,6 +2983,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Microsoft.Extensions.Identity.Core": "8.0.8",
+          "Microsoft.Extensions.Identity.Stores": "8.0.8",
           "MySql.EntityFrameworkCore": "8.0.5"
         },
         "compile": {

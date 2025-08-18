@@ -3,88 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B8761EBA-B502-4270-A4C1-75D5E6AF67FE}|Core\\Core.csproj|c:\\users\\geilson\\desktop\\biblioteca2025\\biblioteca\\core\\dto\\livrodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8761EBA-B502-4270-A4C1-75D5E6AF67FE}|Core\\Core.csproj|solutionrelative:core\\dto\\livrodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A9DEE8A3-4BA3-4D04-B82F-14C0AEEFEDB6}|BibliotecaWeb\\BibliotecaWeb.csproj|c:\\users\\geilson\\desktop\\biblioteca2025\\biblioteca\\bibliotecaweb\\controllers\\itemacervocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9DEE8A3-4BA3-4D04-B82F-14C0AEEFEDB6}|BibliotecaWeb\\BibliotecaWeb.csproj|solutionrelative:bibliotecaweb\\controllers\\itemacervocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B8761EBA-B502-4270-A4C1-75D5E6AF67FE}|Core\\Core.csproj|c:\\users\\geilson\\desktop\\biblioteca2025\\biblioteca\\core\\service\\iautorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8761EBA-B502-4270-A4C1-75D5E6AF67FE}|Core\\Core.csproj|solutionrelative:core\\service\\iautorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A9DEE8A3-4BA3-4D04-B82F-14C0AEEFEDB6}|BibliotecaWeb\\BibliotecaWeb.csproj|c:\\users\\geilson\\desktop\\biblioteca2025\\biblioteca\\bibliotecaweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9DEE8A3-4BA3-4D04-B82F-14C0AEEFEDB6}|BibliotecaWeb\\BibliotecaWeb.csproj|solutionrelative:bibliotecaweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00F47FD0-026A-4268-BEB5-661ECF69A011}|Service\\Service.csproj|c:\\users\\geilson\\desktop\\biblioteca2025\\biblioteca\\service\\livroservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00F47FD0-026A-4268-BEB5-661ECF69A011}|Service\\Service.csproj|solutionrelative:service\\livroservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00F47FD0-026A-4268-BEB5-661ECF69A011}|Service\\Service.csproj|c:\\users\\geilson\\desktop\\biblioteca2025\\biblioteca\\service\\itemacervoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00F47FD0-026A-4268-BEB5-661ECF69A011}|Service\\Service.csproj|solutionrelative:service\\itemacervoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00F47FD0-026A-4268-BEB5-661ECF69A011}|Service\\Service.csproj|c:\\users\\geilson\\desktop\\biblioteca2025\\biblioteca\\service\\editoraservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00F47FD0-026A-4268-BEB5-661ECF69A011}|Service\\Service.csproj|solutionrelative:service\\editoraservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00F47FD0-026A-4268-BEB5-661ECF69A011}|Service\\Service.csproj|c:\\users\\geilson\\desktop\\biblioteca2025\\biblioteca\\service\\autorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00F47FD0-026A-4268-BEB5-661ECF69A011}|Service\\Service.csproj|solutionrelative:service\\autorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00F47FD0-026A-4268-BEB5-661ECF69A011}|Service\\Service.csproj|c:\\users\\geilson\\desktop\\biblioteca2025\\biblioteca\\service\\service.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{00F47FD0-026A-4268-BEB5-661ECF69A011}|Service\\Service.csproj|solutionrelative:service\\service.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8761EBA-B502-4270-A4C1-75D5E6AF67FE}|Core\\Core.csproj|c:\\users\\geilson\\desktop\\biblioteca2025\\biblioteca\\core\\situacaoitemacervo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8761EBA-B502-4270-A4C1-75D5E6AF67FE}|Core\\Core.csproj|solutionrelative:core\\situacaoitemacervo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8761EBA-B502-4270-A4C1-75D5E6AF67FE}|Core\\Core.csproj|c:\\users\\geilson\\desktop\\biblioteca2025\\biblioteca\\core\\scaffold.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{B8761EBA-B502-4270-A4C1-75D5E6AF67FE}|Core\\Core.csproj|solutionrelative:core\\scaffold.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8761EBA-B502-4270-A4C1-75D5E6AF67FE}|Core\\Core.csproj|c:\\users\\geilson\\desktop\\biblioteca2025\\biblioteca\\core\\pessoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8761EBA-B502-4270-A4C1-75D5E6AF67FE}|Core\\Core.csproj|solutionrelative:core\\pessoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8761EBA-B502-4270-A4C1-75D5E6AF67FE}|Core\\Core.csproj|c:\\users\\geilson\\desktop\\biblioteca2025\\biblioteca\\core\\livro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8761EBA-B502-4270-A4C1-75D5E6AF67FE}|Core\\Core.csproj|solutionrelative:core\\livro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8761EBA-B502-4270-A4C1-75D5E6AF67FE}|Core\\Core.csproj|c:\\users\\geilson\\desktop\\biblioteca2025\\biblioteca\\core\\itemacervo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8761EBA-B502-4270-A4C1-75D5E6AF67FE}|Core\\Core.csproj|solutionrelative:core\\itemacervo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8761EBA-B502-4270-A4C1-75D5E6AF67FE}|Core\\Core.csproj|c:\\users\\geilson\\desktop\\biblioteca2025\\biblioteca\\core\\emprestimo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8761EBA-B502-4270-A4C1-75D5E6AF67FE}|Core\\Core.csproj|solutionrelative:core\\emprestimo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8761EBA-B502-4270-A4C1-75D5E6AF67FE}|Core\\Core.csproj|c:\\users\\geilson\\desktop\\biblioteca2025\\biblioteca\\core\\editora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8761EBA-B502-4270-A4C1-75D5E6AF67FE}|Core\\Core.csproj|solutionrelative:core\\editora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8761EBA-B502-4270-A4C1-75D5E6AF67FE}|Core\\Core.csproj|c:\\users\\geilson\\desktop\\biblioteca2025\\biblioteca\\core\\doacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8761EBA-B502-4270-A4C1-75D5E6AF67FE}|Core\\Core.csproj|solutionrelative:core\\doacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8761EBA-B502-4270-A4C1-75D5E6AF67FE}|Core\\Core.csproj|c:\\users\\geilson\\desktop\\biblioteca2025\\biblioteca\\core\\devolucao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8761EBA-B502-4270-A4C1-75D5E6AF67FE}|Core\\Core.csproj|solutionrelative:core\\devolucao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8761EBA-B502-4270-A4C1-75D5E6AF67FE}|Core\\Core.csproj|c:\\users\\geilson\\desktop\\biblioteca2025\\biblioteca\\core\\datatablerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8761EBA-B502-4270-A4C1-75D5E6AF67FE}|Core\\Core.csproj|solutionrelative:core\\datatablerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8761EBA-B502-4270-A4C1-75D5E6AF67FE}|Core\\Core.csproj|c:\\users\\geilson\\desktop\\biblioteca2025\\biblioteca\\core\\bibliotecacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8761EBA-B502-4270-A4C1-75D5E6AF67FE}|Core\\Core.csproj|solutionrelative:core\\bibliotecacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8761EBA-B502-4270-A4C1-75D5E6AF67FE}|Core\\Core.csproj|c:\\users\\geilson\\desktop\\biblioteca2025\\biblioteca\\core\\biblioteca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8761EBA-B502-4270-A4C1-75D5E6AF67FE}|Core\\Core.csproj|solutionrelative:core\\biblioteca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8761EBA-B502-4270-A4C1-75D5E6AF67FE}|Core\\Core.csproj|c:\\users\\geilson\\desktop\\biblioteca2025\\biblioteca\\core\\autor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8761EBA-B502-4270-A4C1-75D5E6AF67FE}|Core\\Core.csproj|solutionrelative:core\\autor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A9DEE8A3-4BA3-4D04-B82F-14C0AEEFEDB6}|BibliotecaWeb\\BibliotecaWeb.csproj|c:\\users\\geilson\\desktop\\biblioteca2025\\biblioteca\\bibliotecaweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A9DEE8A3-4BA3-4D04-B82F-14C0AEEFEDB6}|BibliotecaWeb\\BibliotecaWeb.csproj|solutionrelative:bibliotecaweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B8761EBA-B502-4270-A4C1-75D5E6AF67FE}|Core\\Core.csproj|c:\\users\\geilson\\desktop\\biblioteca2025\\biblioteca\\core\\core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B8761EBA-B502-4270-A4C1-75D5E6AF67FE}|Core\\Core.csproj|solutionrelative:core\\core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -94,263 +22,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Biblioteca.cs",
-              "DocumentMoniker": "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\Core\\Biblioteca.cs",
-              "RelativeDocumentMoniker": "Core\\Biblioteca.cs",
-              "ToolTip": "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\Core\\Biblioteca.cs",
-              "RelativeToolTip": "Core\\Biblioteca.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T15:08:35.79Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Autor.cs",
-              "DocumentMoniker": "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\Core\\Autor.cs",
-              "RelativeDocumentMoniker": "Core\\Autor.cs",
-              "ToolTip": "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\Core\\Autor.cs",
-              "RelativeToolTip": "Core\\Autor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T15:08:32.836Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "DatatableRequest.cs",
-              "DocumentMoniker": "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\Core\\DatatableRequest.cs",
-              "RelativeDocumentMoniker": "Core\\DatatableRequest.cs",
-              "ToolTip": "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\Core\\DatatableRequest.cs",
-              "RelativeToolTip": "Core\\DatatableRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T15:08:58.805Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "LivroDto.cs",
-              "DocumentMoniker": "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\Core\\Dto\\LivroDto.cs",
-              "RelativeDocumentMoniker": "Core\\Dto\\LivroDto.cs",
-              "ToolTip": "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\Core\\Dto\\LivroDto.cs",
-              "RelativeToolTip": "Core\\Dto\\LivroDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "ItemAcervoController.cs",
+              "DocumentMoniker": "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\BibliotecaWeb\\Controllers\\ItemAcervoController.cs",
+              "RelativeDocumentMoniker": "BibliotecaWeb\\Controllers\\ItemAcervoController.cs",
+              "ToolTip": "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\BibliotecaWeb\\Controllers\\ItemAcervoController.cs*",
+              "RelativeToolTip": "BibliotecaWeb\\Controllers\\ItemAcervoController.cs*",
+              "ViewState": "AgIAACYAAABAbGZmZuYswDUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T21:43:13.649Z",
+              "WhenOpened": "2025-08-18T22:56:22.474Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "IAutorService.cs",
-              "DocumentMoniker": "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\Core\\Service\\IAutorService.cs",
-              "RelativeDocumentMoniker": "Core\\Service\\IAutorService.cs",
-              "ToolTip": "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\Core\\Service\\IAutorService.cs",
-              "RelativeToolTip": "Core\\Service\\IAutorService.cs",
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\BibliotecaWeb\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "BibliotecaWeb\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\BibliotecaWeb\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "BibliotecaWeb\\Controllers\\HomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T21:42:55.098Z"
+              "WhenOpened": "2025-08-18T22:42:47.754Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "LivroService.cs",
-              "DocumentMoniker": "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\Service\\LivroService.cs",
-              "RelativeDocumentMoniker": "Service\\LivroService.cs",
-              "ToolTip": "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\Service\\LivroService.cs",
-              "RelativeToolTip": "Service\\LivroService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T21:42:46.1Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ItemAcervoService.cs",
-              "DocumentMoniker": "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\Service\\ItemAcervoService.cs",
-              "RelativeDocumentMoniker": "Service\\ItemAcervoService.cs",
-              "ToolTip": "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\Service\\ItemAcervoService.cs",
-              "RelativeToolTip": "Service\\ItemAcervoService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T21:42:43.969Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EditoraService.cs",
-              "DocumentMoniker": "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\Service\\EditoraService.cs",
-              "RelativeDocumentMoniker": "Service\\EditoraService.cs",
-              "ToolTip": "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\Service\\EditoraService.cs",
-              "RelativeToolTip": "Service\\EditoraService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T21:42:37.707Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AutorService.cs",
-              "DocumentMoniker": "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\Service\\AutorService.cs",
-              "RelativeDocumentMoniker": "Service\\AutorService.cs",
-              "ToolTip": "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\Service\\AutorService.cs",
-              "RelativeToolTip": "Service\\AutorService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T21:42:33.311Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Service.csproj",
-              "DocumentMoniker": "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\Service\\Service.csproj",
-              "RelativeDocumentMoniker": "Service\\Service.csproj",
-              "ToolTip": "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\Service\\Service.csproj",
-              "RelativeToolTip": "Service\\Service.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Core.csproj",
+              "DocumentMoniker": "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\Core\\Core.csproj",
+              "RelativeDocumentMoniker": "Core\\Core.csproj",
+              "ToolTip": "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\Core\\Core.csproj",
+              "RelativeToolTip": "Core\\Core.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-08-07T21:42:30.423Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Situacaoitemacervo.cs",
-              "DocumentMoniker": "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\Core\\Situacaoitemacervo.cs",
-              "RelativeDocumentMoniker": "Core\\Situacaoitemacervo.cs",
-              "ToolTip": "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\Core\\Situacaoitemacervo.cs",
-              "RelativeToolTip": "Core\\Situacaoitemacervo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T21:42:26.625Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "scaffold.txt",
-              "DocumentMoniker": "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\Core\\scaffold.txt",
-              "RelativeDocumentMoniker": "Core\\scaffold.txt",
-              "ToolTip": "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\Core\\scaffold.txt",
-              "RelativeToolTip": "Core\\scaffold.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-08-07T21:42:23.966Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Pessoa.cs",
-              "DocumentMoniker": "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\Core\\Pessoa.cs",
-              "RelativeDocumentMoniker": "Core\\Pessoa.cs",
-              "ToolTip": "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\Core\\Pessoa.cs",
-              "RelativeToolTip": "Core\\Pessoa.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T21:42:21.244Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Livro.cs",
-              "DocumentMoniker": "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\Core\\Livro.cs",
-              "RelativeDocumentMoniker": "Core\\Livro.cs",
-              "ToolTip": "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\Core\\Livro.cs",
-              "RelativeToolTip": "Core\\Livro.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T21:42:19.009Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Emprestimo.cs",
-              "DocumentMoniker": "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\Core\\Emprestimo.cs",
-              "RelativeDocumentMoniker": "Core\\Emprestimo.cs",
-              "ToolTip": "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\Core\\Emprestimo.cs",
-              "RelativeToolTip": "Core\\Emprestimo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T21:42:14.169Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "BibliotecaContext.cs",
-              "DocumentMoniker": "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\Core\\BibliotecaContext.cs",
-              "RelativeDocumentMoniker": "Core\\BibliotecaContext.cs",
-              "ToolTip": "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\Core\\BibliotecaContext.cs",
-              "RelativeToolTip": "Core\\BibliotecaContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T21:41:53.663Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Itemacervo.cs",
-              "DocumentMoniker": "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\Core\\Itemacervo.cs",
-              "RelativeDocumentMoniker": "Core\\Itemacervo.cs",
-              "ToolTip": "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\Core\\Itemacervo.cs",
-              "RelativeToolTip": "Core\\Itemacervo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T15:09:20.122Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Editora.cs",
-              "DocumentMoniker": "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\Core\\Editora.cs",
-              "RelativeDocumentMoniker": "Core\\Editora.cs",
-              "ToolTip": "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\Core\\Editora.cs",
-              "RelativeToolTip": "Core\\Editora.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T15:09:07.081Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Doacao.cs",
-              "DocumentMoniker": "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\Core\\Doacao.cs",
-              "RelativeDocumentMoniker": "Core\\Doacao.cs",
-              "ToolTip": "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\Core\\Doacao.cs",
-              "RelativeToolTip": "Core\\Doacao.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T15:09:04.373Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Devolucao.cs",
-              "DocumentMoniker": "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\Core\\Devolucao.cs",
-              "RelativeDocumentMoniker": "Core\\Devolucao.cs",
-              "ToolTip": "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\Core\\Devolucao.cs",
-              "RelativeToolTip": "Core\\Devolucao.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T15:09:01.425Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\BibliotecaWeb\\Program.cs",
-              "RelativeDocumentMoniker": "BibliotecaWeb\\Program.cs",
-              "ToolTip": "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\BibliotecaWeb\\Program.cs",
-              "RelativeToolTip": "BibliotecaWeb\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T15:03:34.836Z"
+              "WhenOpened": "2025-08-17T22:29:20.283Z",
+              "EditorCaption": ""
             }
           ]
         }

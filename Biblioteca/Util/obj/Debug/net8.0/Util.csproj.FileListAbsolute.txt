@@ -1,0 +1,5 @@
+C:\Users\Geilson\Desktop\Biblioteca2025\Biblioteca\Util\obj\Debug\net8.0\Util.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Geilson\Desktop\Biblioteca2025\Biblioteca\Util\obj\Debug\net8.0\Util.AssemblyInfoInputs.cache
+C:\Users\Geilson\Desktop\Biblioteca2025\Biblioteca\Util\obj\Debug\net8.0\Util.AssemblyInfo.cs
+C:\Users\Geilson\Desktop\Biblioteca2025\Biblioteca\Util\obj\Debug\net8.0\Util.csproj.CoreCompileInputs.cache
+C:\Users\Geilson\Desktop\Biblioteca2025\Biblioteca\Util\obj\Debug\net8.0\Util.sourcelink.json

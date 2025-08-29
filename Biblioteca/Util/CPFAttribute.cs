@@ -1,19 +1,23 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
+
 namespace Util
 {
-    // Validação customizada para CPF
+    /// <summary>
+    /// Validação customizada para CPF
+    /// </summary>
     public class CPFAttribute : ValidationAttribute
     {
         public override bool IsValid(object? value)
         {
-            if (value == null || string.IsNullOrWhiteSpace(value.ToString()))
+            if (value == null || string.IsNullOrEmpty(value.ToString()))
                 return true;
-            var cpf = Methods.RemoveNaoNumericos(value.ToString());
-            return Methods.ValidarCpf(cpf);
+            var valueNoEspecial = Methods.RemoveSpecialsCaracts((string)value);
+            bool valido = Methods.ValidarCpf(valueNoEspecial.ToString());
+            return valido;
         }
 
-        public override string FormatErrorMessage(string name) => $"O campo {name} contém um CPF inválido.";
+        public string GetErrorMessage() =>
+            $"CPF Inválido";
     }
 }
-

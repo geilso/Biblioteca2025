@@ -8,7 +8,7 @@ namespace BibliotecaWeb.Models
 
         public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
 
-        public string? Message { get; set; }
+        public string? Message {  get; set; }
 
         public string? StackTrace { get; set; }
     }

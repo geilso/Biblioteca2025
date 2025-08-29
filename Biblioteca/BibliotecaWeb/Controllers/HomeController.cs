@@ -1,13 +1,15 @@
-ï»¿using BibliotecaWeb.Models;
+using BibliotecaWeb.Models;
+using Core.Service;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
 namespace BibliotecaWeb.Controllers
 {
+    //[Authorize]
     public class HomeController : Controller
     {
         public const string SessionKeyUserName = "UserName";
-        public const string PerfilAluno = "Aluno";
 
         private readonly ILogger<HomeController> _logger;
 
@@ -20,17 +22,15 @@ namespace BibliotecaWeb.Controllers
         {
             if (string.IsNullOrEmpty(HttpContext.Session.GetString(SessionKeyUserName)))
             {
-                HttpContext.Session.SetString(SessionKeyUserName, "Geilson");
+                HttpContext.Session.SetString(SessionKeyUserName, "Marcos Dósea");
             }
             var userName = HttpContext.Session.GetString(SessionKeyUserName);
+            
+            ViewData["nomeUsuario"] = userName;
+            
+            ViewBag.PerfilUsuario = "Professor";
 
-            var viewModel = new HomeViewModel
-            {
-                NomeUsuario = userName ?? string.Empty,
-                PerfilUsuario = PerfilAluno
-            };
-
-            return View(viewModel);
+            return View();
         }
 
         public IActionResult Privacy()

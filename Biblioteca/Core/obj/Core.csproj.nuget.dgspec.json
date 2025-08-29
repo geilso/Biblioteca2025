@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\Core\\Core.csproj": {}
+    "C:\\Users\\Geilson\\Desktop\\Nova pasta tom\\Biblioteca\\Core\\Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\Core\\Core.csproj": {
+    "C:\\Users\\Geilson\\Desktop\\Nova pasta tom\\Biblioteca\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\Geilson\\Desktop\\Nova pasta tom\\Biblioteca\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\Core\\Core.csproj",
+        "projectPath": "C:\\Users\\Geilson\\Desktop\\Nova pasta tom\\Biblioteca\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\Geilson\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Geilson\\Desktop\\Biblioteca2025\\Biblioteca\\Core\\obj\\",
+        "outputPath": "C:\\Users\\Geilson\\Desktop\\Nova pasta tom\\Biblioteca\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -51,29 +51,25 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.18, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.8, )"
+              "version": "[8.0.18, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.8, )"
-            },
-            "Microsoft.Extensions.Identity.Core": {
-              "target": "Package",
-              "version": "[8.0.8, )"
-            },
-            "Microsoft.Extensions.Identity.Stores": {
-              "target": "Package",
-              "version": "[8.0.8, )"
+              "version": "[8.0.18, )"
             },
             "MySql.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.5, )"
+              "version": "[8.0.17, )"
             }
           },
           "imports": [

@@ -1,8 +1,11 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
+
 namespace Util
 {
-    // Validação customizada para CEP
+    /// <summary>
+    /// Validação customizada para CPF
+    /// </summary>
     public class CepAttribute : ValidationAttribute
     {
         /// <summary>
@@ -17,18 +20,17 @@ namespace Util
         /// <returns></returns>
         public override bool IsValid(object value)
         {
-            if (value == null || string.IsNullOrWhiteSpace(value.ToString()))
+            if (value == null || string.IsNullOrEmpty(value.ToString()))
                 return true;
-
-            var cep = Methods.RemoveNaoNumericos(value.ToString());
-
-            // CEP deve ter 8 dígitos e não começar com zero
-            if (cep.Length != 8 || cep.StartsWith("0") || !Methods.SoContemNumeros(cep))
+            var valueNoEspecial = Methods.RemoveSpecialsCaracts((string)value);
+            if (valueNoEspecial.ToString().Length != 8)
                 return false;
-
+            if (valueNoEspecial.ToString().StartsWith('0'))
+                return false;
             return true;
         }
 
-        public override string FormatErrorMessage(string name) => $"O campo {name} contém um CEP inválido.";
+        public string GetErrorMessage() =>
+            $"CEP Inválido";
     }
 }

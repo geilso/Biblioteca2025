@@ -1,4 +1,4 @@
-namespace BibliotecaAPI.Models
+namespace BibliotecaWeb.Models
 {
     public class ErrorViewModel
     {

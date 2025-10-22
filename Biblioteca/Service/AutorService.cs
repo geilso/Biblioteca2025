@@ -3,7 +3,6 @@ using Core.Datatables;
 using Core.DTO;
 using Core.Service;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Graph;
 
 
 
@@ -104,12 +103,12 @@ namespace Service
         }
 
         public IEnumerable<Autor> GetByName(string nomeAutor)
-        {
+        {   
             var query = from autor in context.Autors
                         where autor.Nome.Contains(nomeAutor)
                         select autor;
             return query.AsNoTracking().ToList();
-
+            
             //return context.Autors.Where(
             //    autor => autor.Nome.StartsWith(nomeAutor))
             //    .AsNoTracking();

@@ -1,12 +1,9 @@
 ﻿using Core;
-using Core.Service;
 using Core.Dto;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.Graph;
+using Core.Service;
 using Microsoft.EntityFrameworkCore;
+
+
 
 namespace Service
 {
@@ -53,7 +50,12 @@ namespace Service
             return context.Autors.Find(id);
         }
 
-        public IEnumerable<Autor> GetAll()
+        /// <summary>
+        /// Buscar todos os autores cadastrados
+        /// </summary>
+        /// <returns></returns>
+        /// <exception cref="NotImplementedException"></exception>
+        IEnumerable<Autor> IAutorService.GetAll()
         {
             return context.Autors.AsNoTracking();
         }
@@ -66,23 +68,22 @@ namespace Service
             return query.AsNoTracking().ToList();
         }
 
-        public DatatableResponse GetDataPage(DatatableRequest request)
+        /// <summary>
+        /// Busca nomes dos atuores iniciando pelo nome passado
+        /// </summary>
+        /// <param name="nome"></param>
+        /// <returns></returns>
+        /// <exception cref="NotImplementedException"></exception>
+        IEnumerable<AutorDto> IAutorService.GetByName(string nome)
         {
-            var autores = context.Autors.AsNoTracking();
-            if (!string.IsNullOrEmpty(request.Search))
-            {
-                autores = autores.Where(a => a.Nome.Contains(request.Search));
-            }
-            var totalRecords = autores.Count();
-            var pagedAutores = autores
-                .Skip((request.Page - 1) * request.PageSize)
-                .Take(request.PageSize)
-                .ToList();
-            return new DatatableResponse
-            {
-                Data = pagedAutores,
-                TotalRecords = totalRecords
-            };
+            var query = from Autor autor in context.Autors
+                        orderby autor.Nome descending
+                        select new AutorDto()
+                        {
+                            Id = autor.Id,
+                            Nome = autor.Nome
+                        };
+            return query.AsNoTracking();
         }
     }
 }

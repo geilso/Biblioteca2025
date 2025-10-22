@@ -1,5 +1,5 @@
-// Licenciado para a .NET Foundation sob um ou mais contratos.
-// A .NET Foundation licencia este arquivo para você sob a licença MIT.
+using System.Diagnostics;
+
 namespace BibliotecaWeb.Models
 {
     public class ErrorViewModel
@@ -7,5 +7,9 @@ namespace BibliotecaWeb.Models
         public string? RequestId { get; set; }
 
         public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
+
+        public string? Message { get; set; }
+
+        public string? StackTrace { get; set; }
     }
 }

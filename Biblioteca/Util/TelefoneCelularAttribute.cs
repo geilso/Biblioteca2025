@@ -4,7 +4,7 @@
 namespace Util
 {
     /// <summary>
-    /// Validação customizada para telefone celular
+    /// Validação customizada para CPF
     /// </summary>
     public class TelefoneCelularAttribute : ValidationAttribute
     {
@@ -20,15 +20,17 @@ namespace Util
         /// <returns></returns>
         public override bool IsValid(object? value)
         {
-            if (value == null || string.IsNullOrWhiteSpace(value.ToString()))
+            if (value == null || string.IsNullOrEmpty(value.ToString()))
                 return true;
-            var celular = Methods.RemoveNaoNumericos(value.ToString());
-            // Telefone celular deve ter 11 dígitos, não começar com zero e conter apenas números
-            if (celular.Length != 11 || celular.StartsWith("0") || !Methods.SoContemNumeros(celular))
+            var valueNoSpecial = Methods.RemoveSpecialsCaracts((string)value);
+            if (valueNoSpecial.ToString().Length != 11)
+                return false;
+            if (valueNoSpecial.ToString().StartsWith('0'))
                 return false;
             return true;
         }
 
-        public override string FormatErrorMessage(string name) => $"O campo {name} contém um número de celular inválido.";
+        public string GetErrorMessage() =>
+            $"Celular Inválido";
     }
 }

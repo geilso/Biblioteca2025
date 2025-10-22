@@ -1,28 +1,36 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
+
 namespace Util
 {
-    // Validação customizada para telefone fixo
+    /// <summary>
+    /// Validação customizada para CPF
+    /// </summary>
     public class TelefoneFixoAttribute : ValidationAttribute
     {
-        // Construtor
+        /// <summary>
+        /// Construtor
+        /// </summary>
         public TelefoneFixoAttribute() { }
 
-        // Validação server
-        // <param name="value"></param>
-        // <returns></returns>
+        /// <summary>
+        /// Validação server
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns></returns>
         public override bool IsValid(object? value)
         {
-            if (value == null || string.IsNullOrWhiteSpace(value.ToString()))
+            if (value == null || string.IsNullOrEmpty(value.ToString()))
                 return true;
-            var fixo = Methods.RemoveNaoNumericos(value.ToString());
-            // Telefone fixo deve ter 10 dígitos, não começar com zero e conter apenas números
-            if (fixo.Length != 10 || fixo.StartsWith("0") || !Methods.SoContemNumeros(fixo))
+            var valueNoSpecial = Methods.RemoveSpecialsCaracts((string)value);
+            if (valueNoSpecial.ToString().Length != 10)
+                return false;
+            if (valueNoSpecial.ToString().StartsWith("0"))
                 return false;
             return true;
         }
 
-        public override string FormatErrorMessage(string name) => $"O campo {name} contém um telefone fixo inválido.";
+        public string GetErrorMessage() =>
+            $"Telefone Fixo Inválido";
     }
 }
-

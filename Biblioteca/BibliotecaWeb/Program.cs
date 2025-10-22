@@ -27,7 +27,7 @@ namespace BibliotecaWeb
             builder.Services.AddTransient<ILivroService, LivroService>();
             builder.Services.AddTransient<IItemAcervoService, ItemAcervoService>();
 
-            // configuração do envio de emails para o usuário
+            // configuraï¿½ï¿½o do envio de emails para o usuï¿½rio
             builder.Services.AddTransient<IEmailSender, EmailSender>();
 
             builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
@@ -94,6 +94,13 @@ namespace BibliotecaWeb
                 options.Cookie.IsEssential = true;
             });
 
+
+            builder.Services.AddTransient<IAutorService, AutorService>();
+
+            builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
+            builder.Services.AddDbContext<BibliotecaContext>(
+                options => options.UseMySQL(builder.Configuration.GetConnectionString("BibliotecaConnection")));
 
             var app = builder.Build();
 

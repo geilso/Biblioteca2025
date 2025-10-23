@@ -1,0 +1,96 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Core.Service
+{
+    public class DatatableRequest
+    {
+        public string Search { get; set; }
+        public int Page { get; set; }
+        public int PageSize { get; set; }
+    }
+
+    public class AutorService : IAutorService
+    {
+        // Lista fictícia para simular armazenamento
+        private List<Autor> _autores = new List<Autor>();
+
+        public int Create(Autor autor)
+        {
+            autor.Id = (uint)(_autores.Count + 1);
+            _autores.Add(autor);
+            return (int)autor.Id;
+        }
+
+        public void Edit(Autor autor)
+        {
+            var existing = _autores.FirstOrDefault(a => a.Id == autor.Id);
+            if (existing != null)
+            {
+                existing.Nome = autor.Nome;
+                existing.DataNascimento = autor.DataNascimento;
+                // Atualize outras propriedades conforme necessário
+            }
+        }
+
+        public void Delete(uint id)
+        {
+            var autor = _autores.FirstOrDefault(a => a.Id == id);
+            if (autor != null)
+            {
+                _autores.Remove(autor);
+            }
+        }
+
+        public Autor Get(uint id)
+        {
+            return _autores.FirstOrDefault(a => a.Id == id);
+        }
+
+        public IEnumerable<Autor> GetAll()
+        {
+            return _autores;
+        }
+
+        public IEnumerable<Autor> GetByNome(string nome)
+        {
+            return _autores.Where(a => a.Nome.Contains(nome));
+        }
+
+        public DatatableResponse GetDataPage(DatatableRequest request)
+        {
+            var autores = GetAll();
+            var filteredAutores = autores
+                .Where(a => string.IsNullOrEmpty(request.Search) || a.Nome.Contains(request.Search))
+                .Skip((request.Page - 1) * request.PageSize)
+                .Take(request.PageSize);
+
+            return new DatatableResponse
+            {
+                Data = filteredAutores.ToList(),
+                TotalRecords = autores.Count()
+            };
+        }
+    }
+
+    public class DatatableResponse
+    {
+        public IEnumerable<object> Data { get; set; }
+        public int TotalRecords { get; set; }
+    }
+
+    public interface IAutorService
+    {
+        int Create(Autor autor);
+        void Edit(Autor autor);
+        void Delete(uint id);
+        Autor Get(uint id);
+        IEnumerable<Autor> GetAll();
+        IEnumerable<Autor> GetByNome(string nome);
+
+        DatatableResponse GetDataPage(DatatableRequest request);
+    }
+}

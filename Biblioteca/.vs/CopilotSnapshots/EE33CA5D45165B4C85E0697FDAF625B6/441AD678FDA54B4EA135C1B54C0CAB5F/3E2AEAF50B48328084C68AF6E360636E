@@ -1,0 +1,50 @@
+﻿using Core;
+using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace Service
+{
+    public class ItemAcervoService
+    {
+        private readonly BibliotecaContext context;
+
+        public ItemAcervoService(BibliotecaContext context)
+        {
+            this.context = context;
+        }
+
+        public uint Create(Itemacervo item)
+        {
+            context.Itemacervos.Add(item);
+            context.SaveChanges();
+            return item.Id;
+        }
+
+        public void Edit(Itemacervo item)
+        {
+            context.Itemacervos.Update(item);
+            context.SaveChanges();
+        }
+
+        public void Delete(int id)
+        {
+            var item = context.Itemacervos.Find(id);
+            if (item != null)
+            {
+                context.Itemacervos.Remove(item);
+                context.SaveChanges();
+            }
+        }
+
+        public Itemacervo? Get(int id)
+        {
+            return context.Itemacervos.AsNoTracking().FirstOrDefault(i => i.Id == id);
+        }
+
+        public IEnumerable<Itemacervo> GetAll()
+        {
+            return context.Itemacervos.AsNoTracking().ToList();
+        }
+    }
+}

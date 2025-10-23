@@ -1,0 +1,8 @@
+namespace BibliotecaWeb.Models
+{
+    public class HomeViewModel
+    {
+        public string NomeUsuario { get; set; } = string.Empty;
+        public string PerfilUsuario { get; set; } = string.Empty;
+    }
+}

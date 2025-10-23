@@ -1,0 +1,31 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace Core
+{
+    /// <summary>
+    /// Representa um autor de livros na biblioteca.
+    /// </summary>
+    public sealed class Autor
+    {
+        /// <summary>
+        /// Identificador único do autor.
+        /// </summary>
+        public uint Id { get; set; }
+
+        /// <summary>
+        /// Nome completo do autor.
+        /// </summary>
+        public string Nome { get; set; } = string.Empty;
+
+        /// <summary>
+        /// Data de nascimento do autor.
+        /// </summary>
+        public DateTime DataNascimento { get; set; }
+
+        /// <summary>
+        /// Livros associados ao autor.
+        /// </summary>
+        public ICollection<Livro> IdLivros { get; set; } = new List<Livro>();
+    }
+}

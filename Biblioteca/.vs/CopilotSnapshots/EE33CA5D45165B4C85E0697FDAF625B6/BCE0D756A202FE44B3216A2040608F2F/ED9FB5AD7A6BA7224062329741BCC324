@@ -1,0 +1,54 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Core.Service
+{
+    public class DatatableRequest
+    {
+        public string Search { get; set; }
+        public int Page { get; set; }
+        public int PageSize { get; set; }
+    }
+
+    public class AutorService : IAutorService
+    {
+        // Implementação de outros métodos omitida para brevidade  
+
+        public DatatableResponse GetDataPage(DatatableRequest request)
+        {
+            // Implementação fictícia para retornar uma resposta de exemplo  
+            var autores = GetAll();
+            var filteredAutores = autores
+                .Where(a => string.IsNullOrEmpty(request.Search) || a.Nome.Contains(request.Search))
+                .Skip((request.Page - 1) * request.PageSize)
+                .Take(request.PageSize);
+
+            return new DatatableResponse
+            {
+                Data = filteredAutores.ToList(),
+                TotalRecords = autores.Count()
+            };
+        }
+    }
+
+    public class DatatableResponse
+    {
+        public IEnumerable<object> Data { get; set; }
+        public int TotalRecords { get; set; }
+    }
+
+    public interface IAutorService
+    {
+        int Create(Autor autor);
+        void Edit(Autor autor);
+        void Delete(uint id);
+        Autor Get(uint id);
+        IEnumerable<Autor> GetAll();
+        IEnumerable<Autor> GetByNome(string nome);
+
+        DatatableResponse GetDataPage(DatatableRequest request);
+    }
+}

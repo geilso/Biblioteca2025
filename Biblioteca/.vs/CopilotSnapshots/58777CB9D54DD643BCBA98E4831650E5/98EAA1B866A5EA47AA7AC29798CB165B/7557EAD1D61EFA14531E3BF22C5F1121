@@ -1,0 +1,30 @@
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Util
+{
+    // Validação customizada para CPF
+    public class TelefoneFixoAttribute : ValidationAttribute
+    {
+        // Construtor
+        public TelefoneFixoAttribute() { }
+
+        // Validação server
+        // <param name="value"></param>
+        // <returns></returns>
+        public override bool IsValid(object? value)
+        {
+            if (value == null || string.IsNullOrEmpty(value.ToString()))
+                return true;
+            var valueNoSpecial = Methods.RemoveSpecialsCaracts((string)value);
+            if (valueNoSpecial.ToString().Length != 10)
+                return false;
+            if (valueNoSpecial.ToString().StartsWith("0"))
+                return false;
+            return true;
+        }
+
+        public string GetErrorMessage() =>
+            $"Telefone Fixo Inválido";
+    }
+}
+

@@ -1,0 +1,19 @@
+﻿// Licenciado para a .NET Foundation sob um ou mais contratos.
+// A .NET Foundation licencia este arquivo para você sob a licença MIT.
+using System.ComponentModel.DataAnnotations;
+
+namespace BibliotecaWeb.Models
+{
+    public class AutorViewModel
+    {
+        [Display(Name = "Código")]
+        [Required(ErrorMessage ="O campo código é requerido.")]
+        public uint Id { get; set; }
+
+        [StringLength(50, MinimumLength = 5, ErrorMessage = "O campo nome deve ter entre 5 e 50 caracteres")]
+        public string Nome { get; set; } = string.Empty;
+
+        [Display(Name = "Data Nascimento")]
+        public DateTime DataNascimento { get; set; }
+    }
+}
